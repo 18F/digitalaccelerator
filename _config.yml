@@ -10,7 +10,7 @@ title: Digital Acquisition Pilot Guide
 email: dap-18f@gsa.gov
 description: "The Digital Acquisition Pilot is a fully-funded project lends a team of experts from the Presidential Innovation Fellows, 18F, and US Digital Service to an agency to train up a cadre of digital service experts."
 baseurl: "/digitalaccelerator" # the subpath of your site, e.g. /blog
-url: "https://pages.18f.gov/digitalaccelerator/" # the base hostname & protocol for your site
+url: "https://pages.18f.gov/digitalaccelerator" # the base hostname & protocol for your site
 twitter_username: innovfellows
 
 # Build settings

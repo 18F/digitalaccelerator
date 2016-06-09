@@ -1,30 +1,14 @@
 <!DOCTYPE html>
 <html lang="en'">
-
   {% include eagle.html %}
   {% include head.html %}
-
   <body class="home-layout">
-
-    
     {% include disclaimer.html %}
-
     {{ content }}
-
     {% include footer.html %}
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="/assets/js/vendor/jquery-1.11.3.min.js"></script>
-
-    <!--[if lt IE 9]>
-        <script src="/designstandards/assets/js/vendor/selectivizr-min.js"></script>
-        <script src="/designstandards/assets/js/vendor/respond.js"></script>
-        <script src="/designstandards/assets/js/vendor/rem.min.js"></script>
-      <![endif]-->
-
-    <script src="/assets/js/components.js"></script>
-    <script src="/assets/js/main.js"></script>
-
+    <script src="{{ site.baseurl }}/assets/js/vendor/jquery-1.11.3.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/components.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
     <!-- Google Tag Manager -->
     <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WSXQQT"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -33,11 +17,7 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WSXQQT');</script>
-    <!-- End Google Tag Manager -->
-
     <!-- We participate in the US government's analytics program. See the data at analytics.usa.gov. -->
     <script language="javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=GSA" id="_fed_an_ua_tag"></script>
-
   </body>
-
 </html>
