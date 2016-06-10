@@ -1,0 +1,10 @@
+@media #{$breakpoint-md} {
+  .dap-info {
+    text-align: right;
+  }
+}
+
+input.email {
+  width: 300px;
+  max-width: 100%;
+}
