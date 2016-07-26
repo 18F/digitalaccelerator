@@ -1,0 +1,139 @@
+---
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Digital Acquisition Accelerator</title>
+  <meta name="author" content="18F and PIF">
+  <meta name="description" content="Accelerating the adoption of digital acquisition practices across government">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="assets/build/main.css" rel="stylesheet">
+  <link href="assets/css/solicitations.css" rel="stylesheet">
+</head>
+<body>
+  <div class="usa-disclaimer h6">
+    <img src="assets/img/us-flag.png" alt="U.S. flag">
+    An official website of the United States Government
+  </div>
+
+  <div class="px2 sm-px3 py1 bg-navy white bg-cover bg-center"
+       style="background-image: url(assets/img/hero.jpg)">
+    <nav class="mxn1 sm-center">
+      <a href="#about" class="btn">About</a>
+      <a href="#how" class="btn">How it works</a>
+      <a href="#learn" class="btn">Learn</a>
+      <a href="#participate" class="btn">Participate</a>
+      <a href="#team" class="btn">Team</a>
+      <a href="{{site.baseurl}}/solicitations" class="btn">Solicitations</a>
+      <a href="#subscribe" class="btn">Subscribe</a>
+    </nav>
+    <div class="container py4">
+      <div class="">
+        <h1 class="mt0 h4">Digital Acquisition Accelerator</h1>
+        <h2 class="h1">Solicitations</h2> 
+      </div>
+    </div>
+  </div>
+
+  <div id="solicitaitons" class="px2 sm-px3 py4 bg-white navy">
+    <div class="container">
+      <ul>
+          {% for order in site.data.orders %}
+            <li>
+              <dl class="solicitation">
+              {{order.Requesting_Agency}}
+                <dt class="solicitation-id">ID</dt>
+                <dd class="solicitation-id">{% if order.rfq_id %}#{{order.rfq_id}}{%else%}TBD{% endif %}</dd>
+                <dt class="solicitation-title">Title</dt>
+                <dd class="solicitation-title"><h1>{{order.title}}</h1></dd>
+                <dt class="solicitation-agency">Agency</dt>
+                <dd class="solicitation-agency">{{order.requesting_agency}}</dd>
+                <dt class="solicitation-office">Office</dt>
+                <dd class="solicitation-office">{{order.office}}</dd>
+                <dt class="solicitation-date">Anticipated solicitation date</dt>
+                <dd class="solicitation-date"><time datetime="{{order.solicitation_date}}}">{{order.solicitation_date | date: "%B %d, %Y" }}</time></dd>
+                <dt class="solicitation-period-of-performance">Period of performance</dt>
+                <dd class="solicitation-period-of-performance">{{order.period_of_performance}}</dd>
+                {% if order.description %}
+                <dt class="solicitation-description">Description</dt>
+                <dd class="solicitation-description">
+                <p>{{order.description}}</p>
+                </dd>
+                {% endif %}
+                {% if order.award_data %}
+
+                <dt class="solicitation-description">Award information</dt>
+                <dd class="solicitation-description">
+                  <p>Vendor: {{order.award_data.vendor}}</p>
+                  <p>Amount: {{order.award_data.amount}}</p>
+                  <p>Number of Bidders: {{order.award_data.bidders}}</p>
+                  <p>Median: {{order.award_data.median}}</p>
+                  <p>Mean: {{order.award_data.mean}}</p>
+                  <p>Standard Deviation: {{order.award_data.stdev}}</p>
+                  <p>Award Date: <time datetime="{{order.award_data.date}}}">{{order.award_data.date | date: "%B %d, %Y" }}</time></p>
+                </dd>
+                {% endif %}
+
+                {% if order.repository %}
+                <dt class="solicitation-repository">Repository</dt>
+                <dd class="solicitation-repository"><a href="{{order.repository}}">GitHub</a></p></dd>
+                {% endif %}
+              </dl>
+            </li>
+          {% endfor %}
+        </ul>
+    </div>
+  </div>
+
+  <footer id="subscribe" class="px2 sm-px3 py3 bg-navy white">
+    <div class="clearfix mxn2">
+      <div class="col col-12 md-col-4 px2 mb3 md-mb0">
+        <div class="mb3">
+          <a href="https://presidentialinnovationfellows.gov/" target="_blank" class="mr1 inline-block">
+            <img src="assets/img/logo-pif.png" alt="pif-logo" class="align-middle" width="75">
+          </a>
+          <a href="https://18f.gsa.gov/" target="_blank" class="mr1 inline-block">
+            <img src="assets/img/logo-18f.svg" alt="18f-logo" class="align-middle" width="75">
+          </a>
+        </div>
+        <!-- mailchimp signup snippet -->
+        <div id="mc_embed_signup">
+          <form action="//medium.us13.list-manage.com/subscribe/post?u=5dc46345e0302158f44cf54d5&amp;id=118734743e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <h4>Subscribe to our mailing list</h4>
+              <div class="mc-field-group mb1">
+                <input type="email" value="" name="EMAIL" class="required email field" id="mce-EMAIL" placeholder="your.email@agency.gov">
+              </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_8ff93f9a5662324b360f8107e_90049c3c8c" tabindex="-1" value="">
+              </div>
+              <div class="clear">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-right col-12 md-col-7 px2 dap-info">
+        <h3 class="mt0 mb1">Digital Acquisition Accelerator</h3>
+        <div class="mb2">
+          <a href="mailto:dap-18f@gsa.gov" class="silver" target="blank">dap-18f@gsa.gov</a><br>
+          <a href="http://www.gsa.gov/portal/content/116609" class="silver" target="blank">privacy policy</a> | <a href="https://18f.gsa.gov/linking-policy/" class="silver" target="blank">linking policy</a> | <a href="https://github.com/18F/digitalaccelerator" class="silver" target="blank">source code</a>
+        </div>
+        <div class="mb2">
+          This website is managed by the U.S. General Services Administration.<br>
+          1800 F Street Northwest, Washington, DC 20405
+        </div>
+        <div>
+          The federal government doesn’t endorse, sponsor or recommend the products or services on this site or consider them to be superior to any other products or services.
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,213 @@
+/* @override http://localhost:4000/assets/css/solicitations.css */
+
+.btn-solicitations{
+	background: #112e51;
+  	color: white;
+  	padding: 1em;
+  	margin-top: 0.6em;
+  	display: inline-block;
+  	vertical-align: middle;
+	border-radius: 6px;
+}
+
+.btn-solicitations:hover{
+	background: #212121;
+	text-decoration: underline;
+}
+
+/* @group .solicitation */
+
+.solicitation h1,
+.solicitation dl,
+.solicitation ul,
+.solicitation li,
+.solicitation dd,
+.solicitation dt,
+.solicitation p,
+.solicitation span,
+.solicitation div{
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  line-height: 14px;
+  box-sizing: border-box;
+}
+
+.solicitations > h1{
+  font-size: 24px;
+  font-weight: 600;
+  padding-top: 1em;
+  max-width: 640px;
+  margin: 0 auto 0.8em;
+}
+
+.solicitation{
+  max-width: 640px;
+  margin: 0 auto 1em;
+  border: 1px solid #ccc;
+  padding: 1em;
+  position: relative;
+  border-radius: 0.33rem;
+}
+
+.solicitation dt{
+  text-transform: uppercase;
+  color: #777;
+  font-size: 12px;
+  margin-bottom: 0.4em;
+}
+
+.solicitation dd{
+  margin-bottom: 1.4rem;
+}
+
+.solicitation dd.solicitation-title{
+  font-size: 20px;
+  padding-right: 8rem;
+}
+
+.solicitation dt.solicitation-date::after{ content: ": "; }
+
+.solicitation .solicitation-description p{
+  line-height: 1.4em;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 533.33px){
+  .solicitations > h1{
+    font-size: 32px;
+    letter-spacing: -1px;
+  }
+}
+
+@media screen and (min-width: 711.11px){
+
+.solicitation{
+  padding: 0;
+  line-height: 1rem;
+}
+
+.solicitation dt,
+.solicitation dd{
+  margin-bottom: 0;
+}
+
+.solicitation dt{
+  padding-bottom: 0.6rem;
+}
+
+.solicitation::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.solicitation .solicitation-title{
+  margin-right: 8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.solicitation .solicitation-id{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 8rem;
+  height: 1.85rem;
+  padding-left: 0.5rem;
+}
+
+.solicitation dd.solicitation-id{
+  top: 2.4rem;
+  border-bottom: 1px solid #eee;
+}
+
+.solicitation .solicitation-title,
+.solicitation .solicitation-agency,
+.solicitation .solicitation-date,
+.solicitation .solicitation-repository,
+.solicitation .solicitation-description{
+  padding-left: 1rem;
+}
+
+.solicitation .solicitation-agency,
+.solicitation .solicitation-office,
+.solicitation .solicitation-date,
+.solicitation .solicitation-period-of-performance{
+  width: 50%;
+  float: left;
+  clear: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.solicitation dt.solicitation-title,
+.solicitation dt.solicitation-id,
+.solicitation dt.solicitation-agency,
+.solicitation dt.solicitation-office,
+.solicitation dt.solicitation-date,
+.solicitation dt.solicitation-period-of-performance,
+.solicitation dt.solicitation-description,
+.solicitation dt.solicitation-repository{
+  padding-top: 0.8rem;
+}
+
+.solicitation dd.solicitation-agency,
+.solicitation dd.solicitation-office,
+.solicitation dd.solicitation-date,
+.solicitation dd.solicitation-period-of-performance,
+.solicitation dd.solicitation-description,
+.solicitation dd.solicitation-repository{
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.8rem;
+}
+
+.solicitation dd.solicitation-repository{
+  border: none;
+  padding-bottom: 1.2rem;
+}
+
+.solicitation .solicitation-title,
+.solicitation .solicitation-agency,
+.solicitation .solicitation-date{
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  border-right: 1px solid #eee;
+}
+
+
+.solicitation .solicitation-office,
+.solicitation .solicitation-period-of-performance{
+  float: right;
+  clear: right;
+  padding-right: 1rem;
+  padding-left: 0.5rem;
+}
+
+.solicitation dt.solicitation-office,
+.solicitation dt.solicitation-period-of-performance{
+  margin-top: -2.4rem;
+}
+
+.solicitation .solicitation-title,
+.solicitation .solicitation-date,
+.solicitation .solicitation-description,
+.solicitation .solicitation-repository{
+  clear: both;
+}
+
+.solicitation dd.solicitation-title{
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.8rem;
+}
+
+.solicitation .solicitation-description{
+  margin-bottom: 0;
+  padding-right: 1rem;
+}
+
+}
+
+/* @end */

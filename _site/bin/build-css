@@ -1,0 +1,6 @@
+#!/bin/bash
+
+node-sass \
+  --include-path assets/sass \
+  --output-style compressed \
+  assets/sass/main.scss assets/build/main.css
