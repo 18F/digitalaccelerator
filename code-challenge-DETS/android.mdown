@@ -1,0 +1,25 @@
+# DETS Code Challenge Details
+
+# Summary
+The application will be used to take pictures of items and enter information (see below) about the item. Users will be able to add new items and view and search for previously entered items. The user can also print an item card that can be placed by the item to denote that it has already been captured. Another user can use their device to import that information into their application. The application should then notify all applications on the network that it has been imported by User X.
+
+*Note: As you will be uploading your solution to GitHub, please do not include the words “Government or Details of the Contract” anywhere in your code.*
+
+[DETS Challenge Overview](/DETS-Code-Challenge.mdown)
+
+# Milestones
+
+1. Information captured about item
+	- Pictures of item
+	- Description
+	- Unique Identifier for item
+	- Location (GPS position taken from device or manually entered)
+
+2. Item Card Requirements
+	- All information captured in the “Information captured about item” except the picture
+	- The information should be QR encoded using XML
+	- The information should also be in human readable text
+
+3. Application Requirements
+	- Information and picture should be stored in a database that can easily be moved from one device to another
+	- Must work on an Android Phone
