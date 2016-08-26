@@ -48,7 +48,7 @@ Your submission will be reviewed by at least two of our engineers. The aspects o
 
 #### DETS Team
 
-- [Android challenge](/android.mdown)
+- [Android challenge](https://github.com/18F/digitalaccelerator/blob/18f-pages/code-challenge-DETS/android.mdown)
 
 
 ## Code Challenge Questions
