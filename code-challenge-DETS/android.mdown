@@ -5,7 +5,7 @@ The application will be used to take pictures of items and enter information (se
 
 *Note: As you will be uploading your solution to GitHub, please do not include the words “Government or Details of the Contract” anywhere in your code.*
 
-[DETS Challenge Overview](/code-challenge-DETS.mdown)
+[DETS Challenge Overview](https://github.com/18F/digitalaccelerator/blob/18f-pages/code-challenge-DETS/DETS-Code-Challenge.mdown)
 
 # Milestones
 
