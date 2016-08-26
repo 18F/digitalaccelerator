@@ -1,0 +1,69 @@
+# Digital Evidence Tagging Solution (DETS) Code Challenge
+
+The DETS code challenge is an opportunity to demonstrate proficiency in the problem solving skills we expect you to use on the DETS project.
+
+We don't believe there is a one-size-fits-all technology solution. Solid development is about using the right tools for the job, and constantly learning about them. 
+
+NOTE: The code delivered in this code challenge is for vendor evaluation purposes only and is not an agreement or commitment of work.
+
+## General Information
+
+The DETS code challenge is part of the Government’s effort to adopt agile acquisition models that will enable faster innovation, better vendor relationships, and faster technology adoption. The DETS Government team has worked with GSA/18F’s Digital Acquisition Accelerator Pilot (DAAP) to aid in customer discovery practices and agile acquisition techniques. To that end, we are excited to see government vendors from the ITSSS contract participate in this code challenge. 
+
+## Expectations
+
+Select the android team specific challenge and create a new git repository for that project. Organize your code within that repo -- when you complete the challenge no later than **09/08/16**, zip up your git repository and send the link to the DETS Contracting Officer and Program Manager you are working with. Additionally, include the link in your final proposal.
+
+#### Time Allotment
+
+We respect your time and don't want you to spend more than the time-boxed period for the challenge. This code challenge is set to last no longer than 2-weeks. This time constraint will allow us to evaluate the vendors ability to deliver workable code in an agile manner. The code challenge will **OPEN on 08/26/16 and CLOSE on 09/08/16**.
+
+
+#### Your Challenge README
+
+Include the following items in your `README`:
+
+* Description of the problem and solution.
+* Reasoning behind your technical choices. Trade-offs you might have made, anything you left out, or what you might do differently if you were to spend additional time on the project.
+* Link to to the hosted application where applicable.
+
+#### Commit History
+
+Use whatever development workflow works best for you. If your solution is small enough and a single commit is justified, that's fine; we just ask that you keep your commit history as coherent as possible, [(see example)](https://www.reviewboard.org/docs/codebase/dev/git/clean-commits/).
+
+## What We Review
+
+Your submission will be reviewed by at least two of our engineers. The aspects of your code we will judge include:
+
+* **Clarity:** Does the README clearly explains the problem and solution?
+* **Correctness:** Does the application do what was asked? If there is anything missing, does the README explain why it is missing?
+* **Code Quality:** Is the code simple, easy to understand, and maintainable?
+* **Testing:** If required - how thorough are the automated tests? Will they be difficult to change if the requirements of the application were to change?
+* **UX:** Is the interface understandable and pleasing to use?
+* **Technical Choices:** Do choices of libraries, databases, architecture seem appropriate for the challenge?
+
+
+## Links To Team Specific Challenges
+
+
+#### DETS Team
+
+- [Android challenge](/android.mdown)
+
+
+## Code Challenge Questions
+
+* **If you have questions about the code challenge, please post them as an issue so we can ensure address all questions accordingly.**
+
+<!--
+#### Web Team
+
+- [Front-End Challenges]()
+- [Back-End Challenges]()
+- [PHP Challenges]()
+
+#### iOS Team
+
+- [iOS Challenge]()
+*/
+-->
